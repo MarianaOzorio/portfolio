@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  FOOTER  */
+
+footer {
+    width: 100vw;
+    min-height: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-line {
+    width: 49em;
+    border-top: solid 0.16em #000;
+}
+
+.footer-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0.9em 0.5em;
+}
