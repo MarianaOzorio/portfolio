@@ -142,21 +142,86 @@ header nav{
 /*  ABOUT  */
 
 .main-about-container {
+    width: 100%;
+    height: auto;
+}
+
+/*  SKILLS  */
+
+.skills-group-box {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+}
+
+.flip-card {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #FFF;
+    border: none;
+    border-radius: 50%;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+    perspective: 1000px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+    box-shadow: -5px -5px 5px rgba(92, 92, 92, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.4), 
+    inset -5px -5px 5px rgba(82, 82, 82, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+.front-flip, .back-flip {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back-flip {
+    transform: rotateY(180deg);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.back-flip p {
+    font-size: 0.8em;
+    padding: 18px;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.skill-logo {
+    width: 100px;
+    height: 160;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 /*  FOOTER  */
 
 footer {
     width: 100vw;
-    height: 16vh;
+    min-height: 16vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     bottom: 0;
 }
 
@@ -214,5 +279,5 @@ footer {
 
 .default-main-container-size {
     width: 100%;
-    height: 68vh;
+    height: auto;
 }
