@@ -143,7 +143,7 @@ header nav{
 
 .main-about-container {
     width: 100%;
-    height: auto;
+    height: auto;  
 }
 
 /*  SKILLS  */
@@ -170,8 +170,10 @@ header nav{
     margin: 0px 10px 10px 0px;
     cursor: pointer;
     perspective: 1000px;
+    -webkit-transition: transform 0.8s;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.7s;
     transition: transform 0.8s;
-    transform-style: preserve-3d;  
     box-shadow: inset 7px 7px 14px #d4d6d9, inset -7px -7px 14px #ffffff;
 }
 
@@ -220,12 +222,14 @@ header nav{
 
 footer {
     width: 100vw;
-    min-height: 16vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: flex-end;
     bottom: 0;
+    background-color: #fff;
 }
 
 .footer-line {
@@ -276,11 +280,12 @@ footer {
     }
 
     footer {
-        visibility: hidden;
+        display: none;
     }
 }
 
 .default-main-container-size {
     width: 100%;
     height: auto;
+    margin-bottom: 1.8em;
 }
