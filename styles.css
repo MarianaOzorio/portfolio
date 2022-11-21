@@ -19,7 +19,8 @@ a {
 
 header {
     width: 100%;
-    height: 16vh;
+    min-height: 16vh;
+    background-color: #fff;
     padding: 1em 2em;
     display: flex;
     align-items: center;
@@ -218,6 +219,49 @@ header nav{
     transform: rotateY(180deg);
 }
 
+/*  PROJECTS  */
+
+.main-projects-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project-card {
+    border: solid 0.10em #000;
+    margin: 0.5em;
+    filter: saturate(0%);
+}
+
+.project-card:hover {
+    cursor: pointer;
+    filter: saturate(100%);
+}
+
+.project-card img{
+    width: 400px;
+    height: 200px;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+    font-size: 0.8em;
+}
+
+.project-card label {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 4px;    
+}
+
 /*  FOOTER  */
 
 footer {
@@ -287,5 +331,4 @@ footer {
 .default-main-container-size {
     width: 100%;
     height: auto;
-    margin-bottom: 1.8em;
 }
