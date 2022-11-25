@@ -176,6 +176,7 @@ header nav{
     -webkit-transition: 0.7s;
     transition: transform 0.8s;
     box-shadow: inset 7px 7px 14px #d4d6d9, inset -7px -7px 14px #ffffff;
+    border-radius: 24px;
 }
 
 .front-flip, .back-flip {
