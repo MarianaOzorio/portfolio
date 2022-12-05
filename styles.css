@@ -23,11 +23,15 @@ header {
     text-transform: uppercase;
 }
 
-header nav{
+nav{
     height: 16vh;
     margin: 0em 2em;
     position: absolute;
     background-color: #fff;
+}
+
+.navbar-toggler {
+    margin-right: 0.6em;
 }
 
 .navbar-brand img {
