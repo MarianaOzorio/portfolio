@@ -20,14 +20,46 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div></div>
-            <div class="header-list">
-                <a href="about.html">SOBRE MIM</a>
-                <a href="skills.html">HABILIDADES</a>
-                <a href="projects.html">PROJETOS</a>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="nav-logo-index" src="./images/logo-mariana-athayde.svg" alt="logo escrito Mariana Athayde na cor preta. A fonte é no estilo manuscrita.">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./images/logo-mariana-athayde.svg" alt="logo escrito Mariana Athayde na cor preta. A fonte é no estilo manuscrita.">
+                        </a>                  
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">sobre mim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="projects.html">projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="skills.html">habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-contact-item" href="mailto:mariana.athayde@gmail.com" target="blanck">e-mail</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-contact-item" href="https://www.linkedin.com/in/mariana-athayde-o/" target="blanck">linkedin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-contact-item" href="https://github.com/MarianaOzorio" target="blanck">github</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </nav>  
     </header>
     <main class="container p-5 main-index-container default-main-container-size">
         <section class="index-txt-section">
@@ -61,5 +93,6 @@
             <a href="https://github.com/MarianaOzorio" target="blanck"><img class="footer-icon" src="./images/github-icon.png" alt="a imagem representa a logo do site GitHub. Consiste em um círculo preto com a silhueta branca de um gato"></a>
         </div>
     </footer>    
+    <script src="script.js"></script>
 </body>
 </html>
