@@ -255,9 +255,11 @@ nav{
 
 .project-card-content label {
     margin: 8px 0px 3px 0px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.buttons-project-card {
+.links-project-card {
     display: flex;
     flex-flow: row wrap;
     font-size: 0.8em;
@@ -266,16 +268,16 @@ nav{
 .buttons-project-card button {
     padding: 5px;
     margin: 3px 3px 0px 3px;
-    border-radius: 6px;
+    text-transform: uppercase;
     border: none;
-    box-shadow: inset 1px 1px 3px #dadada, inset -1px -1px 3px #fff;
+    background-color: transparent;
+    color: rgb(92, 91, 91);
+    font-size: 0.8em;
 }
 
+.project-card-content label,
 .buttons-project-card button:hover {
-    background-color: #000;
-    color: #fff;
-    box-shadow: none;
-
+    color: #000;
 }
 
 /*  FOOTER  */
