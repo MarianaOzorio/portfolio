@@ -304,6 +304,7 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
+
     .index-txt-section {
         width: 100%;
         display: flex;
@@ -336,6 +337,11 @@ footer {
 
     footer {
         display: none;
+    }
+
+    .project-card img {
+        width: 20em;
+        height: 10.5em;
     }
 }
 
