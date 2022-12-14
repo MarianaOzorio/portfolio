@@ -167,8 +167,8 @@ nav{
 }
 
 .skill-card {
-    width: 150px;
-    height: 150px;
+    width: 9.3em;
+    height: 9.3em;
     position: relative;
     background-color: #FFF;
     margin: 0px 10px 10px 0px;
@@ -209,8 +209,8 @@ nav{
 }
 
 .skill-logo {
-    width: 70px;
-    height: 130;
+    width: 4.3em;
+    height: 8.1em;
     position: absolute;
     margin: auto;
     top: 50%;
@@ -345,6 +345,20 @@ footer {
         width: 20em;
         height: 10.5em;
     }
+
+    .skill-card {
+        width: 7.5em;
+        height: 7.5em;
+    }   
+    
+    .skill-logo {
+        width: 3.5em;
+        height: 7.2em;
+    }   
+
+    .back-flip p {
+        font-size: 0.6em;
+    }    
 }
 
 .default-main-container-size {
