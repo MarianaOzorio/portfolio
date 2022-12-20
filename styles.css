@@ -169,11 +169,17 @@ nav{
 .skill-card {
     width: 9.3em;
     height: 9.3em;
-    position: relative;
     background-color: #FFF;
     margin: 0px 10px 10px 0px;
     cursor: pointer;
-    perspective: 1000px;
+    perspective: 1000px; 
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
     -webkit-transition: transform 0.8s;
     transform-style: preserve-3d;
     -webkit-transition: 0.7s;
@@ -192,7 +198,6 @@ nav{
 
 .back-flip {
     transform: rotateY(180deg);
-    text-align: center;
     border-radius: 4px;
 }
 

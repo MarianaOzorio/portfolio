@@ -1,6 +1,6 @@
 /* FLIP SKILLS CARD */
 
-const cards = document.querySelectorAll(".skill-card");
+const cards = document.querySelectorAll(".flip-card-inner");
 
 function showSkillCardInformation() {
     this.classList.toggle("flip-skill-card");
