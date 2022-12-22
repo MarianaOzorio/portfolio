@@ -12,7 +12,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: #000;
     box-sizing: inherit;
-    padding-bottom: 4em;
+    padding-bottom: 3.5em;
 }
 
 a {
@@ -162,6 +162,12 @@ nav{
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+ }
+
+.skills-card-instruction-txt {
+    font-size: 1em;
+    color: #5C5B5B;
+    margin-top: -25px;
 }
 
 .skill-card {
@@ -273,7 +279,7 @@ nav{
     text-transform: uppercase;
     border: none;
     background-color: transparent;
-    color: rgb(92, 91, 91);
+    color: #5C5B5B;
     font-size: 0.8em;
 }
 
@@ -335,7 +341,7 @@ footer {
 
     .tag-container {
         display: none;
-    }
+    } 
 }
 
 @media only screen and (max-width: 768px) {
