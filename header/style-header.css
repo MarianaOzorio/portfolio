@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    min-height: 16vh;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 16vh;
+    position: absolute;
+    background-color: #fff;
+}
+
+.container-fluid {
+    width: 95%;
+}
+
+.navbar-toggler {
+    margin-right: 0.5em;
+}
+
+.navbar-brand img {
+    width: 250px;
+}
+
+.nav-contact-item {
+    display: none;
+}
+
+.nav-logo-index {
+    visibility: hidden;
+}
+
+@keyframes btn-close-nav-animation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+
+.btn-close:hover {
+    animation-name: btn-close-nav-animation;
+    animation-duration: 1s;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-contact-item {
+        display: flex;
+    }  
+}

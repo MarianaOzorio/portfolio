@@ -1,0 +1,134 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    box-sizing: inherit;
+    padding-bottom: 3.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-group {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+ }
+
+.skills-card-instruction-txt {
+    font-size: 1em;
+    color: #5C5B5B;
+    margin-top: -25px;
+}
+
+.skill-card {
+    width: 9.3em;
+    height: 9.3em;
+    background-color: #FFF;
+    margin: 0px 15px 15px 0px;
+    cursor: pointer;
+    perspective: 1000px; 
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    -webkit-transition: transform 0.8s;
+    transform-style: preserve-3d;
+    -webkit-transition: 0.7s;
+    transition: transform 0.8s;
+    box-shadow: inset 7px 7px 14px #d4d6d9, inset -7px -7px 14px #ffffff;
+    border-radius: 24px;
+}
+
+.front-flip, .back-flip {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back-flip {
+    transform: rotateY(180deg);
+    border-radius: 4px;
+}
+
+.back-flip p {
+    font-size: 0.7em;
+    padding: 18px;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.skill-logo {
+    width: 4.3em;
+    height: 8.1em;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.flip-skill-card {
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 780px) {
+
+    body {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-contact-item {
+        display: flex;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .skill-card {
+        width: 7.5em;
+        height: 7.5em;
+    }   
+    
+    .skill-logo {
+        width: 3.5em;
+        height: 7.2em;
+    }   
+
+    .back-flip p {
+        font-size: 0.6em;
+    }    
+}

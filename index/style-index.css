@@ -1,0 +1,143 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    box-sizing: inherit;
+    padding-bottom: 3.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.index-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.index-txt-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-hello-plus-logo {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.row-hello-txt {
+    font-size: 1.8em;
+    line-height: 1em;
+}
+
+.logo-index {
+    width: 250px;
+    margin-left: 3px;
+}
+
+.logo-index img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.row-read-more-plus-icon {
+    width: fit-content;
+    height: 3vh;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.read-more-txt {
+    font-size: 0.8em;
+    margin-left: 0;
+}
+
+.row-read-more-plus-icon:hover {
+    color: #000;
+}
+
+.row-read-more-plus-icon img {
+    display: flex;  
+    align-items: center;
+    margin-left: 4px;
+}
+
+@keyframes arrow-forward-animation {
+    from {margin-left: 4px;}
+    to {margin-left: 15px;}
+}
+
+.row-read-more-plus-icon:hover img {
+    animation-name: arrow-forward-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.tag-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.tag-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (max-width: 780px) {
+
+    body {
+        padding-bottom: 0;
+    }
+
+    .index-txt-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .row-hello-plus-logo {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-index {
+        margin-bottom: 4px;
+    }
+
+    .tag-container {
+        display: none;
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-contact-item {
+        display: flex;
+    }
+
+    footer {
+        display: none;
+    }   
+}

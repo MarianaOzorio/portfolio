@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    box-sizing: inherit;
+    padding-bottom: 3.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.projects-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project-card {
+    width: auto;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: inset 2px 2px 14px #d4d6d9, inset -2px -2px 14px #ffffff;
+    margin: 10px;
+}
+
+.project-card img {
+    width: 25em;
+    height: 12.5em;
+    border-radius: 12px;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.project-card-content label {
+    margin: 8px 0px 3px 0px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.links-project-card {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 0.8em;
+}
+
+.buttons-project-card button {
+    padding: 5px;
+    margin: 3px 3px 0px 3px;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    color: #5C5B5B;
+    font-size: 0.8em;
+}
+
+.project-card-content label,
+.buttons-project-card button:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 780px) {
+
+    body {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-contact-item {
+        display: flex;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .project-card img {
+        width: 20em;
+        height: 10.5em;
+    }  
+}

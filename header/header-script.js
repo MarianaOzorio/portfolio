@@ -1,16 +1,3 @@
-/* FLIP SKILLS CARD */
-
-const cards = document.querySelectorAll(".flip-card-inner");
-
-function showSkillCardInformation() {
-    this.classList.toggle("flip-skill-card");
-}
-
-cards.forEach((card) =>
-card.addEventListener("click", showSkillCardInformation));
-
-/* HIDE/SHOW NAVBAR LOGO */
-
 const logoNav = document.querySelector(".logo-expanded-navbar");
 
 function hideLogo() {
